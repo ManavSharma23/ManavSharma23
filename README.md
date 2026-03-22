@@ -53,12 +53,6 @@
 
 ## 📌 Projects
 
-### 🔹 Fall Detection System
-- Python, OpenCV, TensorFlow / PyTorch
-- Real-time fall detection using computer vision
-- Motion / pose based human fall classification
-- Built for safety monitoring applications
-
 ### 🔹 Plate Girder Analysis & Visualization (FOSSEE – IIT Bombay)
 
 - Python, OpenSeesPy, Pandas, Plotly / Matplotlib
@@ -69,6 +63,13 @@
 - Created girder-wise interactive result viewer
 - Added structural plotting and post-processing utilities
 - Improved UI integration in Osdag LCCA desktop application
+  
+### 🔹 Fall Detection System
+- Python, OpenCV, TensorFlow / PyTorch
+- Real-time fall detection using computer vision
+- Motion / pose based human fall classification
+- Built for safety monitoring applications
+
 
 
 ---
