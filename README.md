@@ -59,10 +59,17 @@
 - Motion / pose based human fall classification
 - Built for safety monitoring applications
 
-### 🔹 Osdag Engineering Intern Project
-- Python plotting & structural data processing
-- Simulation result extraction
-- UI improvements
+### 🔹 Plate Girder Analysis & Visualization (FOSSEE – IIT Bombay)
+
+- Python, OpenSeesPy, Pandas, Plotly / Matplotlib
+- Developed analysis result viewer for plate girder bridges
+- Extracted forces, moments, and envelopes from OpenSees datasets
+- Built logical girder detection using BFS graph traversal
+- Implemented moving load trace and vehicle envelope extraction
+- Created girder-wise interactive result viewer
+- Added structural plotting and post-processing utilities
+- Improved UI integration in Osdag LCCA desktop application
+
 
 ---
 
