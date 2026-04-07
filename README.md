@@ -76,8 +76,6 @@
 
 ## 📊 GitHub Stats
 
-![Stats](https://github-readme-stats.vercel.app/api?username=ManavSharma23&show_icons=true&theme=tokyonight&include_all_commits=true)
-
 ![Streak](https://streak-stats.demolab.com?user=ManavSharma23&theme=tokyonight)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ManavSharma23&layout=compact&theme=tokyonight)
+
