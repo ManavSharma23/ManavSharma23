@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Manav Sharma
 
-🎓 B.Tech Electrical Engineering & Computer Science student  
+🎓 B.Tech Computer Science student  
 💻 Interested in AI, Machine Learning, Backend, and Full-Stack Development  
 🚀 Currently working on Python, ML, and Software Projects  
 📍 India  
