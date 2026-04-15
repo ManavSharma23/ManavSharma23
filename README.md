@@ -9,7 +9,7 @@
 
 ## 🚀 About Me
 
-- 🔭 Currently working on AI / ML and backend projects  
+- 🔭 Currently working on AI / ML ,backend And Data Science Projects  
 - 🌱 Learning Machine Learning, Deep Learning, AI, and Full-Stack Development  
 - 🤝 Looking to collaborate on AI, Web, and Software projects  
 - 💬 Ask me about Python, Java, ML, Git, Data Structures  
