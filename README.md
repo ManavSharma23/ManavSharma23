@@ -2,7 +2,7 @@
 
 🎓 B.Tech Computer Science student  
 💻 Interested in AI, Machine Learning, Backend, and Full-Stack Development  
-🚀 Currently working on Python, ML, and Software Projects  
+🚀 Currently working on Python, ML, AI and Software Projects  
 📍 India  
 
 ---
