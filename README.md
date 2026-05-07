@@ -1,9 +1,9 @@
 # 👋 Hi, I'm Manav Sharma
 
-🎓 B.Tech Computer Science student  
+🎓 B.Tech Computer Science Student  
 💻 Interested in AI, Machine Learning, Backend, and Full-Stack Development  
 🚀 Currently working on Python, ML, AI and Software Projects  
-📍 Delhi,India  
+📍 Delhi
 
 ---
 
