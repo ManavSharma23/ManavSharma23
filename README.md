@@ -55,14 +55,14 @@
 
 ### 🔹 Plate Girder Analysis & Visualization (FOSSEE – IIT Bombay)
 
-- Python, OpenSeesPy, Pandas, Plotly / Matplotlib
-- Developed analysis result viewer for plate girder bridges
-- Extracted forces, moments, and envelopes from OpenSees datasets
-- Built logical girder detection using BFS graph traversal
-- Implemented moving load trace and vehicle envelope extraction
-- Created girder-wise interactive result viewer
-- Added structural plotting and post-processing utilities
-- Improved UI integration in Osdag LCCA desktop application
+* Extraction and post-processing of OpenSeesPy bridge analysis results.
+* Force, moment, reaction, deflection, and envelope generation utilities.
+* BFS-based girder detection and grillage connectivity reconstruction.
+* Moving load trace analysis and IRC:6 vehicle load extraction.
+* Interactive girder-wise visualization using Plotly and Matplotlib.
+* Automated engineering report generation using LaTeX/Overleaf.
+* Unit testing and validation with Pytest and MagicMock.
+* UI integration and feature enhancements for the Osdag LCCA desktop application.
   
 ### 🔹 Fall Detection System
 - Python, OpenCV, TensorFlow / PyTorch
