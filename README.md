@@ -43,7 +43,6 @@
 
 ### 🛠 Tools
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
 ![PowerBI](https://img.shields.io/badge/PowerBI-F2C811?style=for-the-badge)
 ![Excel](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma)
