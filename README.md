@@ -12,10 +12,10 @@
 
 ## 🚀 About Me
 
-- 🔭 Developing scalable web systems, distributed concurrency workflows, and applied machine learning models.
-- 💡 Passionate about backend performance, clean modular architectures, and event-driven applications.
-- 🛠️ Hands-on experience with TypeScript, Python, Node.js, Prisma, OpenSeesPy, and native browser APIs.
-- 🤝 Open to collaborate on Full-Stack, AI/ML, and Systems Software projects.
+- 🔭 Building high-concurrency backend architectures, applied computer vision models, and modular web applications.
+- 💡 Deeply interested in spatial-temporal deep learning (LSTM/GCN), transactional systems, and native Web APIs.
+- 🛠️ Hands-on engineering with Python, PyTorch, MediaPipe, TypeScript, Node.js, Prisma, and OpenSeesPy.
+- 🤝 Actively collaborating on Full-Stack, Machine Learning, and Computer Vision software projects.
 
 ---
 
@@ -29,7 +29,15 @@
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-003B57?style=flat-square&logo=mysql&logoColor=white)
 
-### 🌐 Backend & Full-Stack
+### 🤖 AI, Deep Learning & Computer Vision
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-0097A7?style=flat-square&logo=google&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+
+### 🌐 Backend & Web Engineering
 ![NodeJS](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
 ![Express](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white)
@@ -37,64 +45,55 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 
-### 🤖 AI, Data Science & Computer Vision
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square)
-
-### 🛠️ Databases, DevOps & Tools
+### 🛠️ Databases, Testing & Tools
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=flat-square&logo=sqlite&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Vitest](https://img.shields.io/badge/Vitest-6E9F18?style=flat-square&logo=vitest&logoColor=white)
-![PowerBI](https://img.shields.io/badge/PowerBI-F2C811?style=flat-square&logoColor=black)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
 ![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white)
 
 ---
 
 ## 📌 Featured Projects
 
+### 🚨 [Real-Time Fall Detection System (MediaPipe + LSTM)](https://github.com/ManavSharma23/fall-detection)
+*Spatial-temporal fall detection system using human skeletal kinematics and recursive neural networks for live video inference.*
+- **Skeletal Landmark Extraction:** Uses Google MediaPipe Pose to capture 33 3D skeletal keypoints in real time ($33 \times 3 = 99$ spatial features per frame) with low edge latency.
+- **2-Layer LSTM Network:** Processes a 30-frame temporal sliding window (~1 sec at 30 FPS) with two stacked 128-unit LSTM layers and 0.3 dropout to distinguish normal daily locomotion from sudden fall transitions.
+- **Coordinate-Invariant Pipeline:** Normalizes frame sequences via mean-standard deviation scaling and applies a $1.3\times$ weighted `CrossEntropyLoss` to counter class imbalance and minimize critical false negatives.
+- **Dual-Mode CLI:** Supports dynamic training with confusion matrix / classification report generation as well as real-time webcam demo inference.
+- **Tech Stack:** `Python 3.8+`, `PyTorch`, `Google MediaPipe`, `OpenCV`, `NumPy`, `Scikit-learn`.
+
+---
+
 ### 🏥 [PulseCare — Clinical Appointment & Operations Platform](https://github.com/ManavSharma23/healthcare-appointment-manager)
-*Production-grade healthcare operations platform featuring 5 role-based workspaces, atomic booking concurrency, and LLM-assisted clinical triages.*
-- **Role-Based Workspaces:** Tailored environments for **Patient**, **Doctor**, **Admin**, **Clinical Insights & Analytics**, and an elevated **Super Admin / Developer Workstation**.
-- **Atomic Concurrency Hold Engine:** Implemented a transactional 5-minute atomic slot lock preventing double-booking during patient checkout under parallel loads (validated with Vitest stress suites).
-- **AI-Assisted Pre-Visit Triage:** Automated pre-visit clinical triage classifying urgency (`Low`, `Medium`, `High`), extracting chief complaints, and suggesting discussion points with deterministic offline fallback generators.
-- **Doctor & Administrative Hub:** Shift scheduler, automatic appointment conflict cancellations on doctor leave, and dead-letter notification queue with retry mechanisms.
-- **Compliance & Security:** 15-minute elevated superadmin session timers, doctor soft-delete safeguards, and complete audit logging with CSV exports.
-- **Tech Stack:** `Node.js`, `TypeScript`, `Prisma ORM`, `SQLite`, `Vitest`, `REST API`, `Google Calendar API`.
+*Production-grade healthcare platform featuring 5 specialized role-based workspaces, atomic concurrency holds, and LLM clinical triages.*
+- **5 Role-Based Workspaces:** Tailored consoles for **Patient**, **Doctor**, **Admin**, **Clinical Insights & Analytics**, and an elevated **Super Admin / Developer Workstation**.
+- **Atomic Concurrency Hold Engine:** Implemented transactional 5-minute slot reservation locks to eliminate double-booking during checkout under parallel requests (verified with Vitest concurrent test suites).
+- **AI Pre-Visit Intake Triage:** Evaluates patient symptoms using structured LLM prompts to determine clinical urgency (`High`, `Medium`, `Low`), extract chief complaints, and formulate discussion points, backed by deterministic offline fallbacks.
+- **Clinical Governance & Automation:** Automated schedule conflict handling on doctor leave, dead-letter notification queue with manual retries, and searchable audit logs with 1-click CSV export.
+- **Tech Stack:** `TypeScript`, `Node.js`, `Prisma ORM`, `SQLite`, `Vitest`, `REST API`, `Google Calendar API`.
 
 ---
 
 ### 🐉 [DragonSlayer RPG — Modular Web Adventure](https://github.com/ManavSharma23/DragonSlayer-Frontend-Project)
-*A dark-fantasy, turn-based web RPG built from scratch in Vanilla JavaScript (ES6 Modules) with zero external UI frameworks.*
-- **Modular Architecture:** Clean separation of concerns across specialized ES6 modules (`state.js`, `combat.js`, `ui.js`, `shop.js`, `audio.js`, `sprites.js`).
-- **Reactive State & Persistence:** Unidirectional state store with automatic `localStorage` serialization for seamless game resume.
-- **Combat Engine:** Deterministic turn-based combat with damage variance, critical strikes, shield mitigation, multi-phase boss mechanics, and floating combat damage numbers.
-- **Economy & Inventory:** Dynamic armory shop with tiered gear, gold-checking purchase validation, and contextual potion selection modals.
-- **Procedural Sound Synthesizer:** Real-time 8-bit sound effects synthesized on the fly via the native browser **Web Audio API** (zero downloaded audio files).
+*A dark-fantasy turn-based RPG web application engineered entirely in Vanilla JavaScript (ES6 Modules) with zero external UI frameworks.*
+- **Modular ES6 Architecture:** Clean separation of concerns across dedicated modules (`state.js`, `combat.js`, `ui.js`, `shop.js`, `audio.js`, `sprites.js`).
+- **Reactive State & Persistence:** Unidirectional reactive game state store with automated `localStorage` checkpoints for session resumption.
+- **Turn-Based Combat Engine:** Deterministic turn calculations with damage variance, shield blocking mitigation, multi-turn boss attack states, and real-time floating combat text.
+- **Armory Economy & Inventory:** Full-fledged store featuring gold-validated weapon/armor purchases, equipment slot management, and an interactive potion selection dialog.
+- **Web Audio API Synthesis:** Zero-download procedural 8-bit sound effects synthesized dynamically using browser oscillators and gain envelopes.
 - **Tech Stack:** `JavaScript (ES6 Modules)`, `HTML5`, `Vanilla CSS3`, `Web Audio API`, `Node.js (Native Test Runner)`.
 
 ---
 
 ### 🌉 Plate Girder Analysis & Visualization (FOSSEE – IIT Bombay)
-*Engineering analysis and envelope extraction pipeline for bridge structures using OpenSeesPy and Python.*
-- Extracted and post-processed OpenSeesPy finite element bridge analysis outputs for force, moment, shear, and deflection envelopes.
-- Implemented BFS-based girder detection algorithms and grillage connectivity reconstruction.
-- Handled IRC:6 vehicle moving-load traces and dynamic load envelope calculations.
-- Generated interactive, girder-wise stress and deflection visualizations using Plotly and Matplotlib.
-- Developed automated LaTeX report generation pipelines and unit test suites with `pytest` and `unittest.mock`.
+*Structural engineering analysis and load envelope extraction pipeline built with Python and OpenSeesPy.*
+- Post-processed finite element bridge simulations to compute shear, axial force, bending moment, and deflection envelopes.
+- Implemented breadth-first search (BFS) girder detection algorithms and automated grillage structural connectivity reconstruction.
+- Handled dynamic IRC:6 moving-load trace extractions and vehicle envelope computations.
+- Automated engineering report generation via LaTeX and interactive visualization via Plotly and Matplotlib.
 - **Tech Stack:** `Python`, `OpenSeesPy`, `Plotly`, `Matplotlib`, `LaTeX`, `Pytest`.
-
----
-
-### 👁️ Real-Time Fall Detection System
-*Computer-vision safety monitoring system for fall detection and rapid hazard classification.*
-- Developed real-time human pose and bounding trajectory analysis using OpenCV and deep learning classifiers.
-- Designed motion thresholding to detect sudden descent patterns and anomalous posture transitions.
-- Optimized for low-latency edge inference in elderly care and safety-critical environments.
-- **Tech Stack:** `Python`, `OpenCV`, `TensorFlow / PyTorch`, `NumPy`.
 
 ---
 
